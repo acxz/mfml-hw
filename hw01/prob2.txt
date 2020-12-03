@@ -1,0 +1,23 @@
+Problem 2
+
+This past week we have discussed many forms of interpolation.
+Polynomial interpolation gives us a simple machinery to fit a mathematical
+model, a polynomial in this case, for a series of datapoints. Lagrange
+polynomials provide M polynomial basis functions to fit data of M + 1
+points without having to solve a linear system of equations, as the polynomial
+fit is unique under this condition. Trigonometric polynomials can also be used
+for interpolation and the infinite degree trigonometric polynomial is known as
+the Fourier Series, which has seen use in many different fields for fitting data
+and approximating functions as sum of sinusoids. Splines are a useful tool that
+can provide a higher fidelity fit, as they fit inidividual polynomials on the
+data intervals. They also ensure the stability of the fit by considering the
+derivatives at the points where the individual polynomials intersect.
+
+Interpolation is a very useful and practical tool. During my undergrad aerospace
+labs, we would use linear and quadratic polynomial interpolations to estimate
+system parameters. Given a physics derived model of lift/drag forces and
+velocity, these parameters would be determined based on a polynomial fitted on
+the data obtained from experiments. Another use of interpolation is in the
+domain of trajectory generation. Often times you have a set of high level
+waypoints, but to generate a smooth upsampled sequence of points so that a
+controller can track the trajectory requires the use of spline interpolation.
