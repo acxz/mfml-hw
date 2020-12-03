@@ -1,0 +1,24 @@
+This week we discussed singular value decomposition (SVD) and how to best use it
+in our favorite problem, regression. SVD is a very powerful technique for
+decomposing a matrix into orthogonal and diagonal matrices. This allows us to
+quickly solve least squares problems as well as analyze the original matrix
+with respect to the problem. In least squares we need to calculate the
+pseudoinverse of A and that is easily as follows:
+A = U \Sigma V.T
+A\dagger = V \Sigma^(-1) U.T,
+simplifying the computation.
+
+The SVD decomposition also gives us the ability to analyze singular values and
+truncate some of our "data" so as to achieve a better generalization fit and not
+to overfit. This is done by determining which singular values are too small and
+zeroing them, so that the inverse does not blow up, while still maintaining
+accuracy.
+
+We also covered iterative methods like gradient descent and conjugate gradients.
+Gradient descent follows the direction of the largest gradient, while
+conjugate gradients takes orthogonal based steps to iteratively minimize the
+error in each direction.
+
+These method covered above give us robust and practical regression method to use
+in a variety of situations. In fact methods like gradient descent and conjugate
+gradients are used as popular optimizers for deep learning frameworks.
