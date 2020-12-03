@@ -1,0 +1,12 @@
+Problem 1
+
+This past week we have discussed orthonormal basis, or in other words,
+orthobasis. An orthobasis is a basis for a space where <vi, vj> = 1 if i = j and
+= 0 if i =/= j. An important application of representing a span basis as an orthobasis is the
+ability to treat inner products on Hilbert spaces as dot products on Euclidean
+space (Parseval's Theorem). This gives us a coefficient representation of elements in Hilbert spaces
+and lets us manipulate infinite dimensional objects like functions in an
+intuitive way. This property is examplified when performing linear approximations,
+i.e. approximating functions that can be represented with a known set of basis
+functions. This gives us a very powerful technique of data fitting, one of the
+biggest concepts we are learning in this class.
