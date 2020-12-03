@@ -1,0 +1,18 @@
+This past week we covered norms. In particular we covered properties of norms
+such as homogeneity and the triangle inequality as well as different kinds of
+norms like the l-infinity norm and the l2 norm. Norms are relevant because they
+provide us with a notion of distance, in Euclidean space that we encouter in
+everyday life the l2 norm is commonly used. The l1 norm is also useful since it
+is used to measure distances along streets, which can be seen as a grid.
+
+We also covered inner products and their properties. The inner product let's us
+think about angles and directions of elements in vector spaces. Induced norms
+are defined with respect to the inner products and have many useful properties
+such as the Pythagorean Theorem and the Cauchy-Schwarz inequality. Direction is
+a powerful concept that inner products give to a space and allows discussion on
+orthogonality. Using these fundamental linear algebra ideas such as norms and
+inner products, along with spans of linear spaces and basis vectors, gives us
+the machinery to formulate systems of linear equations on higher dimensions.
+This in turn allows us to solve a variety of linear problems, such as
+linear approximation as well as minimization problems, which can be useful for
+fitting a particular model to a dataset.
