@@ -1,0 +1,16 @@
+This week we introduced probability, reviewing basic concepts such as
+expectation, variance and their properties. We slo covered CDFs and PDFs.
+Random variables are decribed with cumulative density functions and their
+probability for a given value is specified with the derivative of the cdf, the
+probability density function.
+
+A big concept we covered was the weak law of large numbers (WLLN). The WLLN
+allows us explain that a set of random numbers can converge as the set grows.
+Intuitively this means that if I have a large set of random numbers, I can
+appropriately determine the probability of an event.
+
+We also covered Gaussian distributions and their properties, particularly the
+fact that a random variable equal to a linear combination of random variables
+characterized by a Gaussian pdf is also a Gaussian pdf.
+Gaussian distributions are often seen in robotics problems, because of these
+properties that make them easier to work with.
