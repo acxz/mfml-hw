@@ -1,0 +1,22 @@
+Problem 1
+
+This week in lecture we discussed regression techniques utilising least squares.
+We first started off with linear and nonlinear regression. We showed how both of
+these problems can be formulated similarly with the minimization problem of
+||y - Ax||^2. The matrix A essentially encodes the structure of the solution as
+a linear combination of basis functions. The minimization problem itself can
+have many solutions based on the rank of A. Under such conditions the problem
+can be converted to a ridge regression problem, where a penalty is established
+on the norm of the decision variable, giving us the ability to tune our solution
+for accuracy vs magnitude. Using the Representer Theorem, least squares can even
+be used to solve regression problems in infinte dimensional Hilbert space.
+
+Least squares regression techniques are an intuitive and powerful technique of
+fitting functions to data. It gives us the representation to come up with
+functions as linear combinations of basis functions as well as giving us the
+framework to solve for the coefficients of the basis functions. In my research I
+have used nonlinear least squares regression for system identification. In that
+setting, we wanted to know the masses and inertias for a robot's manipulator and
+each row in our A matrix consisted of how the masses and inertias are linearly
+related to the center of mass. The data points we used consisted of the pose
+information and center of mass reading.
