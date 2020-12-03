@@ -1,0 +1,16 @@
+This week we built upon our discussion of probability and Gaussian distributions
+from last week to use Gaussian distributions for probabilistic estimations. In
+particular we covered the concept of minimum mean square error (MMSE). The important
+takeway from this is the fact that the average performance will increase given
+conditional information, even though our estimate is the same.
+
+We learned how to perform MMSE estimation using the Gaussian distribution
+and learned about close form solutions of the estimate and error based on
+observed random variables. Conditional independence was also discussed in the
+context of graphical models and the corresponding covariance matrix entries.
+
+We also went over how to use the Schur complement. The Schur complement is
+really useful since it allows us to update the inverse of a matrix with new data
+without recomputing our existing inverse. This means for real time critical
+applications we can easily incorporate new data to obtain a better model on the
+fly.
