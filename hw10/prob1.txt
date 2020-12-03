@@ -1,0 +1,23 @@
+This week in lecture we covered classification. This is different from what the
+model fitting that we have been doing for regression problems. One way to
+classify is with the Bayes classifier which just chooses the class which
+maximizes the conditional probability. Another one that does not require the
+knowledge of the probability distribution is the nearest neighbor classifier
+which only uses the collected data to find the class for any given value in the
+domain.
+
+We also talked about risk. Risk is the average performance for our classifier,
+computed as the expectation of our loss. Risk minimization occurs by minimizing
+a data driven (empirical) expectation of the loss with respect to a hypothesis
+(or our belief of what the classifier should be).
+
+Finally we covered logistic regression which attempts to recover the conditional
+probability from the data and extrapolate it out for the classification problem.
+A function is choosen which gets passed through a logistic sigmoid to compute
+the conditional probability. By minimizing the loss with respect to parameters
+of our specific function structure, the function parameters, the function, and
+hence the conditional probability function can be recovered. This probability is
+then the one used to classifiy the data.
+
+Classification is another problem that machine learning solves very well and is
+important for a variety of discrete model fitting tasks such as image labelling.
