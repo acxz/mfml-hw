@@ -1,0 +1,24 @@
+Problem 1
+
+This week the focus was on Reproducing Kernel Hilbert Spaces (RKHS) and how to
+use them in regression problems. An RKHS is a space of functions in which the
+sampling operator is continuous. Utilizing the Riesz representation theorem,
+which states that linear continuous functionals can be represented as the inner
+product of two elements of the Hilbert Space (F(x) = <x,c> where x,c \in S),
+there exists a function, k_tau, where F_tau(f) = f(tau) = <f,k_tau>. Expanding
+the definition of k_tau a kernel is created which treats tau as another
+parameter, k_tau(t) = k(tau, t). Then integrating k(tau, t) * f(tau) over tau
+allows us to recover the original function, f. With this fact, estimates of the
+function f can be made using a kernel function. The kernel function itself can
+be constructed with an orthobasis on the Hilbert space.
+
+Kernel Regression utilizes RKHS to recover/estimate functions from existing
+datapoints or "samples". The original infinite-dimensional least squares problem
+we had minimizing over f is now directly solvable by replacing f(tm) with
+<f, k_tm>. The relevance of kernel regression is that we can now map our data
+points to an infinite dimensional Hilbert space instead of working with some
+finite dimensional, giving us more representational power, without increasing
+our computational load, since at the end of the day a matrix of inner products
+is created. For the kernel regression case the dimension is data x data, while
+in the basis regression it is the dimension of our finite number of basis
+choosen.
